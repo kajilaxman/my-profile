@@ -1,0 +1,3062 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+/*navbar styling*/
+.navbar{
+	position: fixed;
+	/*background: crimson;*/
+	width: 100%;
+  padding: 15px 0;
+	font-family: 'Ubuntu', sans-serif;
+	display: flex;
+	transition: all 0.4s ease;
+	z-index: 999;
+}
+.navbar .logo a{
+  font-size: 36px;
+  /*background: red;*/
+  align-items: center;
+  margin-left: 60%;
+  color: white;
+  font-weight: 600;
+  /*position: sticky;*/
+}
+.navbar.sticky{
+	padding: 15px 0px;
+	background: crimson;
+}
+.navbar .logo span{
+	color: lime;
+	transition: all 0.4s ease;
+}
+.navbar.sticky .logo span{
+	color: white;	
+}
+.menu{
+	width: 52%;
+	color: white;
+	/*background:green;*/
+	display: flex;
+	align-items: center;
+	padding: 10px 35px;
+	margin-left: 35%;
+	justify-content: space-between;
+	position: relative;
+}
+.menu li{
+	list-style: none;
+}
+.menu li a{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.menu li a:hover{
+	cursor: pointer;
+	color: lime;
+}
+.menu-btn i{
+	font-size: 25px;
+	color: white;
+	cursor: pointer;
+	display: none;
+	position: relative;
+	}
+
+/*home section css*/
+.container{
+	width: 100%;
+	background: url('images/banner.jpg') no-repeat center;
+	/*background: url('images/banner.jpg') no-repeat center;*/
+	height: 100vh;
+	background-size: cover;
+}
+.home{
+	width: 80%;
+	height: 50vh;
+	/*background: green;*/
+	position: absolute;
+	top: 200px;
+	left: 50px;
+	font-family: 'Poppins', cursive;
+}
+.home .home-content{
+	margin-top: 5%;
+	margin-left: 5%;
+}
+.home .home-content .text-1{
+	font-size: 20px;
+	color: white;
+}
+.home .home-content .text-2{
+	font-size: 60px;
+	color: white;
+	font-weight: 600;
+}
+.home .home-content .text-3{
+	font-size: 32px;
+	font-family: 'poppins';
+	color: white;
+	font-weight: 400;
+}
+.home .home-content .text-4{
+	font-size: 32px;
+	font-family: 'poppins';
+	color: white;
+	font-weight: 400;
+}
+.home .home-content span{
+	color: lime;
+}
+.home .btn{
+	margin-left: 5%;
+	margin-top: 1.5%;
+}
+.home .btn button{
+	width: 12%;
+	height: 5.5vh;
+	border-radius: 5px;
+	border: none;
+	background: orangered;
+	font-size: 17.5px;
+	color: white;
+	font-weight: 300;
+	 transition: all 0.3s ease;
+}
+.home .btn button:hover{
+	cursor: pointer;
+	background: none;
+	border: 2px solid orangered;
+	color: white;
+	left: 20px;
+}
+
+/*About Section CSS*/
+section{
+	padding: 100px 0;
+}
+.about{
+	font-family: 'Poppins', sans-serif;
+	/*background: red;*/
+}
+.max-width{
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+.about .title{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+	font-family: 'Ubuntu', sans-serif;
+}
+.about .title::before{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	width: 180px;
+	height: 3px;
+	background: #111;
+	transform: translateX(-50%);
+}
+.about .title::after{
+	content: "who i am";
+	position: absolute;
+	bottom: -165px;
+	left: 50%;
+	color: limegreen;
+	font-size: 20px;
+	background: #fff;
+	transform: translateX(-50%);
+}
+.about .about-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	/*background: red;*/
+}
+.about .about-content .left{
+	width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+	width: 55%;
+}
+.about .about-content .right .text{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+   color: limegreen;
+} 
+.about .about-content .right p{
+	  text-align: justify;
+}
+.about .about-content .right a{
+	display: inline-block;
+	background: crimson;
+	font-size: 20px;
+	font-weight: 500;
+	color: white;
+	padding: 10px 30px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid crimson;
+	transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+  color: crimson;
+  background: none;
+}
+
+
+/*services section css*/
+.services{
+	height: 75vh;
+	background: black;
+}
+.services .title{
+	position: relative;
+  margin-left: 45%;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  display: flex;
+}
+.services .title h1{
+	font-size: 30px;
+	color: white;
+	margin-top: 0%;
+}
+.services .title p{
+	margin-top: 6.8%;
+	margin-left: -21%;
+	color: limegreen;
+	font-size: 18px;
+	/*position: fixed;*/
+}
+
+.services .div{
+	width: 100%;
+	height: 44vh;
+	margin-top: 2.4%;
+  /*background: limegreen;*/
+  display: flex;
+}
+.services .div .div-class{
+  width: 27%;
+  height: 35vh;
+  background: rgba(50, 50, 50, 0.80);
+  margin-top: 1.5%;
+  margin-left: 6.5%;
+  border-radius: 6px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+  transition: 0.8s;
+}
+.services .div .div-class:hover{
+	cursor: pointer;
+	background: crimson;
+}
+.services .div #div-2{
+  margin-left: 3%;
+}
+.services .div #div-3{
+	margin-left: 3%;
+}
+ .div .div-class i{
+ 	font-size: 45px;
+ 	font-weight: bold;
+ 	margin-left: 43%;
+ 	margin-top: 4.3%;
+ 	color: limegreen;
+ }
+ .head{
+    color: white;
+    margin-left: 34%;
+    margin-top: 3.5%;
+    font-family: 'Poppins';
+    font-weight: lighter;
+ }
+ .para{
+ 	  width: 85%;
+ 	  height: 15vh;
+ 	  margin-left: 8%;
+ 	  margin-top: 3%;
+ 	  /*background: red;*/
+ 	  font-size: 17px;
+ 	  color: white;
+ 	  font-weight: lighter;
+ 	  font-family: 'Poppins',sans-serif;
+ 	  text-align: justify;
+ }
+.services .div .div-class:hover{
+	transform: scale(1.02);
+}
+
+/*skills section css*/
+.skills{
+	width: 100%;
+	height: 88vh;
+	/*background: green;*/
+}
+.skills .title{
+	position: relative;
+	margin-left: 45%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  display: flex;
+}
+.skills .title h1{
+	font-size: 30px;
+	font-weight: bold;
+}
+.skills .title p{
+	margin-top: 5.8%;
+	margin-left: -20.85%;
+	color: limegreen;
+	font-size: 17.8px;
+	/*position: fixed;*/
+}
+.skills .line{
+	width: 92%;
+	height: 54vh;
+	/*background: yellow;*/
+	margin-left: 5%;
+	display: flex;
+}
+.line .text{
+ width: 45%;
+ height: 47vh;
+ /*background: green;*/
+ margin-top: 3.4%;
+ margin-left: 5%;
+}
+.line .text h3{
+	margin-top: 2.6%;
+	margin-left: 4%;
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  font-weight:bold;
+}
+.line .text p{
+	width: 88%;
+	margin-top: 3.1%;
+	margin-left: 4%;
+  font-size: 17.6px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 200;
+  text-align: justify;
+}
+.line .text button{
+	margin-top: 4.3%;
+	margin-left: 4%;
+	border: none; 
+	width: 22%;
+	height: 6vh;
+	border-radius: 6%;
+	font-size: 16px;
+	background: crimson;
+	color: white;
+	font-family: 'Ubuntu';
+	font-weight: bolder;
+	transition: 0.7s;
+}
+.line .text button:hover{
+	cursor: pointer;
+	background: limegreen;
+	transform: scale(1.05);
+}
+.line .column1{
+ width: 45%;
+ height: 47vh;
+ /*background: green;*/
+ margin-top: 2.2%;
+ margin-left: 1%;
+}
+.line .column1 .design{
+	/*background: red;*/
+	margin-top: 5.1%;
+}
+.line .column1 .head{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.line .column1 .design .head #span{
+	margin-left: -51.5%;
+	font-weight: 500;
+	font-size: 17.6px;
+	color: black;
+}
+.line .column1 .design .div{
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+.line .column1 .design .div::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  left: 0;
+  top: 0;
+  background: limegreen;
+}
+.line .column1 .design .html::before{
+  width: 90%;
+}
+.line .column1 .design .css::before{
+  width: 80%;
+}
+.line .column1 .design .js::before{
+  width: 60%;
+}
+.line .column1 .design .node::before{
+  width: 10%;
+}
+.line .column1 .design .db::before{
+  width: 5%;
+}
+
+/*Teams Section Starts*/
+.teams{
+	width: 100%;
+	height: 94vh;
+	background: black;
+}
+.teams .title{
+	width: 600px;
+  height: 16vh;
+  /*background: yellow;*/
+  margin-left: 38.5%;
+  margin-top: 0%;
+  display: flex;
+}
+.teams .title h1{
+	padding: 15px 105px;
+	font-size: 30px;
+	color: white;
+	font-family: 'Poppins','sans-serif;';
+}
+.teams .title p{
+	margin-top: 12%;
+	margin-left: -43.25%;
+	font-size: 19px;
+  color: limegreen;
+	font-family: 'Poppins','sans-serif';
+}
+.teams .body{
+	width: 100%;
+	height: 60vh;
+	margin-top: 0.5%;
+	/*background: red;*/
+}
+.teams .body .member{
+  width: 90%;
+  height: 60vh;
+  /*background: yellow;*/
+  margin: auto;
+  display: flex;
+}
+
+.teams .body .button{
+	height: 5vh;
+	 width: 100%;
+	 margin-top: -1.9%;
+	 align-items: center;
+	 justify-content: center;
+	/* background: red;*/
+	 display: flex;
+}
+.teams .body button{
+	width: 4%;
+	height: 2vh;
+	background: limegreen;
+	border: 2px solid limegreen;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.teams .body button.full{
+	margin-left: 0.8%;
+	background: transparent;
+	cursor: pointer;
+	transition: 0.8s;
+}
+.teams .body button.full:hover{
+	background: limegreen;
+}
+.teams .body .member .members{
+	 width: 30%;
+	 height: 50vh;
+	 background: rgba(100, 100, 120, 0.5);
+	 margin-top: 2%;
+	 margin-left: 2.5%;
+	 box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
+	 border-radius: 6px;
+	 transition: 0.8s;
+}
+.teams .body .member .members:hover{
+	cursor: pointer;
+	transform: scale(1.05);
+}
+.teams .body .member .members img{
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	margin-top: 4%;
+	margin-left: 32%;
+	border: 6px solid limegreen;
+}
+.teams .body .member .members img.third{
+	width: 30%;
+	height: 20vh;
+}
+.teams .body .member .members h3{
+	font-size: 25px;
+	font-family: 'Ubuntu';
+	color: white;
+	margin-top: 3%;
+	margin-left: 31%;
+}
+.teams .body .member .members h3.third{
+	margin-left: 29%;
+}
+.teams .body .member .members p{
+	margin-top: 3%;
+  font-size: 16px;
+  padding: 10px 25px;
+  text-align: justify;
+  color: white;
+  font-family: 'Poppins';
+}
+.teams .body .member .members-one{
+	display: none;
+}
+.teams .body .member .members-one{
+	 width: 30%;
+	 height: 50vh;
+	 background: rgba(100, 100, 120, 0.5);
+	 margin-top: 2%;
+	 margin-left: 2.5%;
+	 box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
+	 border-radius: 6px;
+	 transition: 0.8s;
+}
+.teams .body .member .members-one:hover{
+	cursor: pointer;
+	transform: scale(1.05);
+}
+.teams .body .member .members-one img{
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	margin-top: 4%;
+	margin-left: 32%;
+	border: 6px solid limegreen;
+}
+.teams .body .member .members-one img third{
+	width: 30%;
+	height: 20vh;
+}
+.teams .body .member .members-one h3{
+	font-size: 25px;
+	font-family: 'Ubuntu';
+	color: white;
+	margin-top: 3%;
+	margin-left: 31%;
+}
+.teams .body .member .members-one h3.third{
+	margin-left: 29%;
+}
+.teams .body .member .members-one p{
+	margin-top: 3%;
+  font-size: 16px;
+  padding: 10px 25px;
+  text-align: justify;
+  color: white;
+  font-family: 'Poppins';
+}
+
+/*contact section css*/
+.contact{
+	height: 95vh;
+	/*background: red;*/
+}
+.contact .title{
+	width: 100%;
+	height: 14vh;
+  /*background: red;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .title h1{
+	font-size: 30px;
+	font-family: 'Ubuntu','sans-serif';
+	font-weight: 600;
+}
+.contact .title p{
+	font-size: 18px;
+	font-family: 'Ubuntu','sans-serif';
+  font-weight: 200;
+  margin-top: 4.6%;
+  margin-left: -7.55%;
+  color: rgba(0, 180, 0, 0.9);
+}
+.contact .main{
+	width: 100%;
+	height: 65vh;
+	margin-top: 2%;
+	/*background: crimson;*/
+	display: flex;
+	}
+.contact .main .row{
+  width: 95%;
+  height: 60vh;
+  /*background: limegreen;*/
+  margin-top: 0.5%;
+  margin-left: 2.5%;
+  display: flex;
+}
+.contact .main .row .column{
+	width: 48%;
+	height: 58vh;
+	/*background: yellow;*/
+	margin-top: 0.5%;
+	margin-left: 5.3%;
+	text-align: justify;
+}
+.contact .main .row .column h1{
+	font-size: 25px;
+	font-family: 'Ubuntu',sans-serif;
+
+}
+.contact .main .row .column p{
+	margin-top: 3.2%;
+	font-size: 17px;
+	font-family: 'Poppins';
+}
+.contact .main .row .column .col{
+	/*background: red;*/
+	margin-top: 3.65%;
+	display: flex;
+}
+.contact .main .row .column .col i{
+	padding: 10px 35px;
+	font-size: 33px;
+	color: crimson;
+}
+.contact .main .row .column .col p{
+	font-family: 'Poppins',sans-serif;
+	margin-top: 0.3%;
+
+}
+.contact .main .row .column .col .address{
+	margin-top: 0.8%;
+	margin-left: 1%;
+}
+.contact .main .row .column .col .p1{
+	font-size: 17px;
+   margin-top: 4.9%;
+   font-family: 'Poppins',sans-serif;
+   color: rgba(0, 0, 0, 0.7);
+   margin-left: -7.75%;
+}
+.contact .main .row .column .col .p2{
+	font-size: 17px;
+   margin-top: 4.9%;
+    font-family: 'Poppins',sans-serif;
+   color: rgba(0, 0, 0, 0.7);
+   margin-left: -10.52%;
+}
+.contact .main .row .column .col .p3{
+   font-size: 17px;
+   margin-top: 4.9%;
+   font-family: 'Poppins',sans-serif;
+   color: rgba(0, 0, 0, 0.7);
+   margin-left: -6.75%;
+}
+
+.contact .main .row .column h3{
+	display: flex;
+	margin-top: 1%;
+	font-size: 25px;
+	font-family: 'Ubuntu',sans-serif;
+	margin-left: 2.5%;
+}
+.contact .main .row .column form{
+	width: 96%;
+  height: 50vh;
+  /*background: crimson;*/
+  margin-left: 2%;
+}
+.contact .main .row .column form input{
+	margin-top: 2.8%;
+	width: 42%;
+	height: 6vh;
+	margin-left: 0.9%;
+	border: none;
+	padding: 10px 10px;
+	font-size: 18px;
+	font-family: 'Poppins',sans-serif;
+	color: black;
+	border-radius: 4px;
+	outline: none;
+	background: transparent;
+	border: 2px solid gray;
+}
+.contact .main .row .column form #inp{
+  width: 90%;
+}
+.contact .main .row .column form #message{
+	 width: 90%;
+	height: 15vh;
+	padding: -30px 15px;
+}
+
+.contact .main .row .column form button{
+  width: 30%;
+  height: 6vh;
+  background: crimson;
+  margin-top: 4.5%;
+  margin-left: 1.3%;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-family: 'Ubuntu',sans-serif;
+  color: white;
+  transition: all 0.3s ease;
+}
+.contact .main .row .column form button:hover{
+	cursor: pointer;
+	background: transparent;
+	border: 1.6px solid red;
+	color: black;
+}
+
+
+/*scroll up button css*/
+.scroll-up-btn{
+   position: fixed;
+   height: 45px;
+   width: 42px;
+   background: rgba(0, 0, 200, 0.6);
+   color: white;
+   right: 30px;
+   bottom: 10px;
+   text-align: center;
+   line-height: 45px;
+   z-index: 9999;
+   font-size: 30px;
+   border-radius: 6px;
+   cursor: pointer;
+   opacity: 0;
+   pointer-events: none;
+   transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+	bottom: 30px;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+/*footer section css*/
+.footer{
+	height: 6.5vh;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer h3{
+	font-size: 18px;
+	font-family: 'Poppins',sans-serif;
+	font-weight: 500;
+}
+.footer h3 span{
+	color: crimson;
+}
+
+
+
+/*Responsive website design*/
+
+@media all and (max-width:1540px){
+	.about .about-btn #btn{
+		width: 18%;
+		padding: 14.3px 64px;
+	}
+}
+@media all and (max-width:1480px){
+	 .skills .title p{
+	 	margin-left: -21.95%;
+	 }
+	 .contact .title p{
+	 	 margin-left: -7.95%;
+	 }
+}
+@media all and (max-width:1460px){
+  .contact .main .row .column .col .p1{
+  	margin-left: -8.45%;
+  }
+  .contact .main .row .column .col .p2{
+  	margin-left: -11.25%;
+  }
+  .contact .main .row .column .col .p3{
+  	margin-left: -7.75%;
+  }
+}
+@media all and (max-width:1445px){
+.footer .description{
+	margin: auto;
+	margin-left: 33.2%;
+	font-family: 'Ubuntu',sans-serif;
+}
+}
+@media all and (max-width:1440px){
+	.about .about-btn #btn{
+		width: 20%;
+		 padding: 14.3px 68px;
+	}
+	.services .title p{
+		margin-left: -22%;
+	}
+}
+@media all and (max-width:1420px){
+	 .skills .title p{
+	 	margin-left: -22.75%;
+	 }
+	 .contact .title p{
+	 	margin-left: -8.35%;
+	 }
+
+}
+@media all and (max-width:1400px){
+   .services .title p{
+		margin-left: -22.8%;
+	}
+	.teams .title h1{
+	 	 padding: 15px 85px;
+	 }
+	 .teams .title p{
+	 	  margin-left: -39.85%;
+	 }
+	 .teams .body .member .members img{
+	 	margin-left: 29%;
+	 }
+	 .teams .body .member .members h3{
+     margin-left: 27.7%;
+	 } 
+	  .teams .body .member .members h3.third{
+	  	margin-left: 25.7%;
+	  }
+	   .teams .body .member .members p{
+   	   margin-top: 6.2%;
+   }
+    .teams .body .member .members-one img{
+	 	margin-left: 29%;
+	 }
+	 .teams .body .member .members-one h3{
+     margin-left: 27.7%;
+	 } 
+	  .teams .body .member .members-one h3.third{
+	  	margin-left: 25.7%;
+	  }
+	   .teams .body .member .members-one p{
+   	   margin-top: 6.2%;
+   	   column-gap: normal;
+   }
+}
+@media all and (max-width:1370px){
+	 .skills .title p{
+	 	margin-top: 9.45%;
+	 	margin-left: -23.85%;
+	 }
+	  .contact .main .row .column .col .p1{
+  	margin-left: -8.95%;
+  }
+  .contact .main .row .column .col .p2{
+  	margin-left: -11.95%;
+  }
+  .contact .main .row .column .col .p3{
+  	margin-left: -8.15%;
+  }
+}
+@media all and (max-width:1350px){
+	.about .about-btn #btn{
+		width: 23%;
+		text-align: center;
+	}
+	.services .title p{
+		margin-left: -23.8%;
+	}
+}
+@media all and (max-width:1310px){
+   .services .title p{
+   	margin-top: 7.1%;
+		margin-left: -24.8%;
+	}
+	.contact .title p{
+		margin-left: -9.05%;
+	}
+	 .contact .main .row .column .col .p1{
+  	margin-left: -9.45%;
+  }
+  .contact .main .row .column .col .p2{
+  	margin-left: -12.45%;
+  }
+  .contact .main .row .column .col .p3{
+  	margin-left: -8.45%;
+  }
+}
+@media all and (max-width:1300px){
+	 .skills .title p{
+	 	margin-top: 9.55%;
+	 	margin-left: -24.65%;
+	 }
+
+}
+@media all and (max-width:1280px){
+	.about .about-btn #btn{
+		width: 20%;
+		 height: 7vh;
+	}
+	.navbar .logo a{
+		margin-left: 55%;
+	}
+	.home .btn button{
+		width: 20%;
+	font-size: 18px;
+}
+	.about .about-btn #btn{
+		width: 26%;
+		 padding: 14.6px 84px;
+	}
+	.line .text{
+		width: 54%;
+		margin-left: -2.1%;
+	}
+	.contact .main .row .column form input{
+		width: 41.3%;
+		margin-left: 0.1%;
+	}
+
+}
+@media all and (max-width:1250px){
+   .services .title p{
+   	margin-top: 7.5%;
+		margin-left: -25.8%;
+	}
+}
+@media all and (max-width:1240px){
+	  .teams .title h1{
+	 	 padding: 15px 62px;
+	 }
+	 .teams .title p{
+	 	  margin-left: -36.3%;
+	 }
+	 .contact .title p{
+		margin-left: -9.45%;
+	}
+	 .contact .main .row .column .col .p1{
+  	margin-left: -9.75%;
+  }
+  .contact .main .row .column .col .p2{
+  	margin-left: -13.15%;
+  }
+  .contact .main .row .column .col .p3{
+  	margin-left: -8.85%;
+  }
+}
+@media all and (max-width:1270px){
+	 .skills .title p{
+	 	margin-top: 9.65%;
+	 	margin-left: -25.55%;
+	 }
+}
+@media all and (max-width:1230px){
+	.navbar .logo a{
+		margin-left: 48%;
+	}
+	.about .about-btn #btn{
+		width: 25%;
+		padding: 14px 80px;
+		font-size: 17px;
+	}
+	.contact .main .row .column form input{
+		margin-top: 4.25%;
+	}
+}
+@media all and (max-width:1220px){
+	.skills .title p{
+	 	margin-top: 9.85%;
+	 	margin-left: -26.35%;
+	 }
+}
+@media all and (max-width:1200px){
+	.services .title p{
+   	margin-top: 8%;
+		margin-left: -26.5%;
+	}
+	.skills .title p{
+	 	margin-top: 9.95%;
+	 	margin-left: -26.95%;
+	 }
+}
+@media all and (max-width:1195px){
+
+	.about .about-btn #btn{
+		width: 25%;
+		/*text-align: center;*/
+		padding: 13px 80px;
+	}
+
+	.teams .body .member .members{
+		height: 55vh;
+	}
+	.teams .body .member .members h3{
+		margin-left: 25.25%;
+	}
+	.teams .body .member .members h3.third{
+		margin-left: 23.05%;
+	}
+	.teams .body .member .members img{
+		width: 130px;
+		height: 130px;
+		margin-left: 25.86%;
+	}
+	.teams .body .member .members p{
+		margin-top: 5.2%;
+	}
+	.teams .body .member .members-one{
+		height: 55vh;
+	}
+	.teams .body .member .members-one h3{
+		margin-left: 25.25%;
+	}
+	.teams .body .member .members-one h3.third{
+		margin-left: 23.05%;
+	}
+	.teams .body .member .members-one img{
+		width: 130px;
+		height: 130px;
+		margin-left: 25.86%;
+	}
+	.teams .body .member .members-one p{
+		margin-top: 5.2%;
+	}
+	 .contact .main .row .column .col .p1{
+  	margin-left: -10.35%;
+  }
+  .contact .main .row .column .col .p2{
+  	margin-left: -13.75%;
+  }
+  .contact .main .row .column .col .p3{
+  	margin-left: -9.35%;
+  }
+	
+}
+@media all and (max-width:1180px){
+	.navbar .logo a{
+		margin-left: 48%;
+	}
+	.about .about-btn #btn{
+		width: 28%;
+		font-size: 17px;
+		padding: 14px 90px;
+	}
+	.services .title h1{
+		font-size: 26px;
+	  color: white;
+	  margin-left: -3%;
+	}
+	.services .title p{
+   	margin-top: 7.2%;
+		margin-left: -24.1%;
+	}
+	.head{
+		margin-left: 30%;
+	}
+	.para{
+		margin-top: 7%;
+	}
+	.line .column1 .design .head #span{
+		margin-left: -41.5%;
+	}
+	.contact .title p{
+    margin-left: -9.75%;
+	}
+}
+@media all and (max-width:1160px){
+  .services .title p{
+   	margin-top: 7.2%;
+		margin-left: -25.1%;
+	}
+	.skills .title p{
+	 	margin-top: 9.95%;
+	 	margin-left: -27.55%;
+	 }
+	 .contact .main .row .column form button{
+	 	width: 32%;
+	 }
+}
+@media all and (max-width:1150px){
+	 .contact .main .row .column .col .p1{
+  	margin-left: -10.65%;
+  }
+  .contact .main .row .column .col .p2{
+  	margin-left: -14.25%;
+  }
+  .contact .main .row .column .col .p3{
+  	margin-left: -9.65%;
+  }
+  .contact .title p{
+  	margin-left: -10.05%;
+  }
+}
+@media all and (max-width:1130px){
+	.services .title p{
+   	margin-top: 7.2%;
+		margin-left: -26.1%;
+	}
+	.services .div .div-class{
+	 	height: 38vh;
+	 }
+}
+@media all and (max-width:1120px){
+  .about .about-btn #btn{
+		width: 31%;
+		font-size: 17px;
+		padding: 15px 96px;
+	}
+}
+@media all and (max-width:1105px){
+  .about .about-btn #btn{
+		width: 28%;
+		font-size: 17px;
+		padding: 13px 86px;
+		margin-top:-14%;
+	}
+	.desc .details{
+		overflow: hidden;
+	}
+	.desc .details h1{
+		display: flex;
+		margin-top:5%;
+	}
+	.skills .title p{
+		margin-top: 10.05%;
+		margin-left: -28.68%;
+	}
+	.contact .title p{
+  	margin-left: -10.45%;
+  }
+  .contact .main .row .column .col .p1{
+  	margin-left: -11.15%;
+  }
+  .contact .main .row .column .col .p2{
+  	margin-left: -14.65%;
+  }
+  .contact .main .row .column .col .p3{
+  	margin-left: -9.95%;
+  }
+  .about .about-content .left img{
+  	 height: 350px;
+  	 width: 350px;
+  }
+}
+@media all and (max-width:1090px){
+	.skills{
+		height: 128vh;
+	}
+   .skills .line{
+   	display: block;
+   }
+   .skills .title p{
+		margin-top: 11.25%;
+		margin-left: -30.88%;
+	}
+   .line .text{
+   	width: 95%;
+   	margin-top: 5%;
+   	margin-left: 5%;
+   }
+   .line .column1{
+   	width: 85%;
+   	margin-left: 8.5%;
+   }
+   .line .column1 .design .head #span{
+   	 margin-left: -41.8%;
+   }
+   .contact .main .row .column .col .p1{
+  	margin-left: -11.32%;
+  }
+  .contact .main .row .column .col .p2{
+  	margin-top: 5.3%;
+  	margin-left: -14.95%;
+  }
+  .contact .main .row .column .col .p3{
+  	margin-left: -10.15%;
+  }
+}
+@media all and (max-width:1080px){
+	.menu-btn i{
+		display: block;
+		margin-left: 71%;
+		position: absolute;
+		top: 20px;
+		left: 258px;
+		transition: 0.7s ease;
+		z-index: 30;
+	}
+	.menu-btn i.active:before{
+      content: "\f00d";
+	}
+	.menu{
+		height: 100vh;
+  	width: 220px;
+  	margin-top: -1.4%;
+    background: black;
+    box-shadow: 0px 0px 20px 0px rgba(50, 0, 0, 0.5);
+    /*display: flex;*/
+    position: fixed;
+    transition: 0.5s;
+    display: none;
+}
+.menu.active{
+   margin-left: 82%;
+   display: inline-block;
+}
+.menu li{
+	display: flex;
+  margin-top: 32%;
+/*	background: red;*/
+}
+	.navbar .logo a{
+		margin-left: 40%;
+	}
+	.home .btn button{
+		margin-top: 4%;
+	}
+	 .services .div .div-class{
+	 	height: 38vh;
+	 }
+	.services .title h1{
+		font-size: 30px;
+	  color: white;
+	  margin-left: -4.4%;
+	}
+	.services .title p{
+   	margin-top: 7.7%;
+		margin-left: -29.1%;
+	}
+	.head{
+		margin-left: 28%;
+	}
+	.para{
+		margin-top: 7%;
+	}
+	.line .column1 .design .head #span{
+   	 margin-left: -38.4%;
+   }
+   .teams{
+   	height: 192vh;
+   }
+   .teams .body .member{
+   	display: block;
+   	margin-top: 4.5%;
+   }
+   .teams .body .member .members{
+   	 width: 95%;
+     height: 40vh;
+     margin-top: 5.5%;
+   }
+   .teams .body .member .members img{
+   	margin-top: 1.4%;
+   	 margin-left: 43.7%;
+   }
+   .teams .body .member .members h3{
+   	font-size: 26px;
+   	margin-top: 0.7%;
+    margin-left: 42.65%;
+   }
+   .teams .body .member .members h3.third{
+   margin-left: 41.85%;
+   }
+    .teams .body .member .members p{
+    	 margin-top: 1.4%;
+    	 font-size: 20px;
+    }
+    .teams .body .member .members-one{
+   	 width: 95%;
+     height: 40vh;
+     margin-top: 5.5%;
+   }
+   .teams .body .member .members-one img{
+   	margin-top: 1.4%;
+   	 margin-left: 43.7%;
+   }
+   .teams .body .member .members-one h3{
+   	font-size: 26px;
+   	margin-top: 0.7%;
+    margin-left: 42.65%;
+   }
+   .teams .body .member .members-one h3.third{
+   margin-left: 41.85%;
+   }
+    .teams .body .member .members-one p{
+    	 margin-top: 1.4%;
+    	 font-size: 20px;
+    }
+    .teams .body .button{
+    	margin-top: 56.5%;
+    }
+    .teams .body button{
+    	width: 6.5%;
+    }
+    .teams .body .member{
+ 	    margin-top: 7.5%;
+ }
+}
+@media all and (max-width:1070px){
+	.contact .main .row .column form input{
+		width: 40.6%;
+	}
+  .contact .main .row .column form button{
+	 	width: 33.3%;
+	 	margin-left: 0.7%;
+	 }
+
+}
+@media all and (max-width:1055px){
+	.services{
+		height: 112vh;
+	}
+	.services .title p{
+		margin-top: 8.6%;
+		margin-left: -30.2%;
+	}
+	.services .div {
+ 	  display: block;
+ }
+ .services .div .div-class{
+  width: 90%;
+  height: 24vh;
+  margin-top: 6.5%;
+  margin-left: 5.25%;
+}
+.services .div .div-class:hover{
+	transform: scale(1.04);
+}
+.div .div-class i{
+ 	font-size: 40px;
+ 	margin-left: 46.5%;
+ 	margin-top: 1.1%;
+ }
+ .head{
+    margin-left: 42%;
+    margin-top: 0.5%;
+    font-size: 22px;
+ }
+ .para{
+ 	  margin-left: 6.7%;
+ 	  margin-top: 1.5%;
+ }
+ .services .div #div-2{
+  margin-left: 5%;
+  margin-top: 2.0%;
+}
+.services .div #div-3{
+	margin-left: 5%;
+	margin-top: 2.0%;
+}
+.skills .title p{
+		margin-top: 11.25%;
+		margin-left: -32.88%;
+	}
+.line .column1 .design .head #span{
+   	 margin-left: -71.4%;
+   }
+    .teams .body .button{
+    	margin-top: 58.5%;
+    }
+    .contact{
+    	height: 150vh;
+    	/*background: red;*/
+    }
+    .contact .title p{
+      font-size: 19px;
+    	margin-top: 5.86%;
+    	margin-left: -11.05%;
+    }
+    .contact .main{
+    	height: 130vh;
+    	/*background: green;*/
+    }
+
+    .contact .main .row{
+      height: 128vh;
+    	display: block;
+    	/*background: yellow;*/
+    }
+    .contact .main .row .column{
+    	width: 89%;
+    }
+    .contact .main .row .column .col i{
+    	font-size: 40px;
+    	margin-top: 1%;
+
+    }
+    .contact .main .row .column .col p{
+    	margin-top: 0.6%;
+    	font-size: 21px;
+    }
+    .contact .main .row .column .col .p1{
+    	font-size: 20px;
+  	  margin-left: -7.26%;
+  	  margin-top: 4.5%;
+  }
+  .contact .main .row .column .col .p2{
+  	font-size: 20px;
+  	margin-top: 4.4%;
+  	margin-left: -9.5%;
+  }
+  .contact .main .row .column .col .p3{
+  	font-size: 20px;
+  	margin-top: 4.4%;
+  	margin-left: -6.5%;
+  }
+  .contact .main .row .column{
+  	margin-top: 2.5%;
+  }
+  .contact .main .row .column h1{
+  	font-size: 27px;
+  }
+  .contact .main .row .column p{
+  	margin-top: 4%;
+  	font-size: 19.3px;
+  }
+  .contact .main .row .column form input{
+  	width: 47.3%;
+  }
+  .contact .main .row .column form #inp{
+    width: 98.9%;
+  }
+  .contact .main .row .column form #message{
+  	width: 98.9%;
+  }
+  .contact .main .row .column form button{
+  	width: 28%;
+  }
+}
+@media all and (max-width:1042px){
+ .services .title p{
+		margin-top: 9.3%;
+		margin-left: -30.9%;
+	}
+}
+@media all and (max-width:1035px){
+	.teams .body .button{
+    	margin-top: 60.5%;
+    }
+}
+@media all and (max-width:1025px){
+	.contact .title p{
+    margin-left: -11.38%;
+	}
+	 .contact .main .row .column .col .p1{
+  	  margin-left: -7.66%;
+	}
+  .contact .main .row .column .col .p2{
+  	font-size: 20px;
+  	margin-top: 4.7%;
+  	margin-left: -10.15%;
+  }
+  .contact .main .row .column .col .p3{
+  	margin-left: -6.8%;
+  }
+}
+@media all and (max-width:1010px)
+{
+.menu-btn i{
+	margin-left: 70%;
+}	
+.home .home-content{
+		margin-left: 3%;
+	}
+	.about .about-btn #btn{
+		width: 35%;
+    padding: 15px 90px; 
+	 }
+
+}
+@media all and (max-width:995px)
+{
+.menu-btn i{
+	margin-left: 69%;
+}	
+	.menu{
+		margin-left: 76%;
+	}
+   .about .about-btn #btn{
+     width: 32%;
+     padding: 16px 88px;
+     margin-top: -14%;
+     margin-left: 43%;
+	}
+	.services .title p{
+ 	 margin-top: 9.75%;
+   margin-left: -33.1%;
+ }
+ .teams .body .button{
+    	margin-top: 62.5%;
+    }
+    .contact .title p{
+    margin-left: -11.68%;
+	}
+	
+}
+@media all and (max-width:985px)
+{
+.menu-btn i{
+	margin-left: 68%;
+
+}
+.about .about-btn #btn{
+  	margin-top: -14.5%;
+  }	
+  .skills .title p{
+		margin-top: 11.65%;
+		margin-left: -34.08%;
+	}
+}
+@media all and (max-width:960px){
+	.menu-btn i{
+		margin-left: 67%;
+	}
+	.navbar .logo a{
+		margin-left: 35%;
+	}
+	.services .title p{
+ 	 margin-top: 10.4%;
+   margin-left: -34.1%;
+ }
+ .teams .title{
+ 	margin-top: 1.5%;
+ }
+ .teams .title h1{
+ 	 padding: 15px 30px;
+ }
+ .teams .title p{
+ 	  margin-left: -30.75%;
+ }
+ .teams .body .member{
+ 	margin-top: 7.8%;
+ }
+ .teams .body .member .members{
+   	 width: 95%;
+     height: 43vh;
+     margin-top: 5.5%;
+   }
+   .teams .body .member .members img{
+   	margin-top: 1.4%;
+   	 margin-left: 40.5%;
+   }
+   .teams .body .member .members h3{
+   	font-size: 26px;
+   	margin-top: 0.7%;
+    margin-left: 38.65%;
+   }
+   .teams .body .member .members h3.third{
+   margin-left: 37.35%;
+   }
+   .teams .body .member .members p{
+   	margin-top: 3%;
+   }
+   .teams .body .member .members-one{
+   	 width: 95%;
+     height: 43vh;
+     margin-top: 5.5%;
+   }
+   .teams .body .member .members-one img{
+   	margin-top: 1.4%;
+   	 margin-left: 40.5%;
+   }
+   .teams .body .member .members-one h3{
+   	font-size: 26px;
+   	margin-top: 0.7%;
+    margin-left: 38.65%;
+   }
+   .teams .body .member .members-one h3.third{
+   margin-left: 37.35%;
+   }
+   .teams .body .member .members-one p{
+   	margin-top: 3%;
+   }
+   .teams .body .button{
+    	margin-top: 72.5%;
+    }
+    .contact .main .row .column .col .p1{
+  	  margin-left: -7.86%;
+	}
+  .contact .main .row .column .col .p2{
+  	font-size: 20px;
+  	margin-top: 4.7%;
+  	margin-left: -10.55%;
+  }
+  .contact .main .row .column .col .p3{
+  	margin-left: -7.1%;
+  }
+}
+@media all and (max-width:947px){
+ .max-width{
+	max-width: 800px;
+ }
+.about .about-content .column{
+   width: 50%;
+ }
+ .about .about-content .left{
+    display: flex;
+    justify-content: center;
+    margin: 0px auto 60px;
+ }
+  .about .about-content .right{
+  	flex: 100%;
+  }
+}
+@media all and (max-width:940px){
+  .services .title p{
+		margin-top: 10.75%;
+		margin-left: -35.2%;
+	}
+	.skills .title p{
+		margin-top: 11.65%;
+		margin-left: -35.5%;
+	}
+	.contact .title p{
+		margin-top: 6.7%;
+		margin-left: -12.15%;
+	}
+	.contact .main .row .column .col .p1{
+  	  margin-left: -8.16%;
+	}
+	.contact .main .row .column .col .p2{
+    margin-left: -10.85%;
+	}
+	.contact .main .row .column .col .p3{
+  	margin-left: -7.35%;
+  }
+}
+@media all and (max-width:920px){
+	.about .about-btn #btn{
+		width: 34%;
+		margin-top: -14.5%;
+	}
+	.desc img{
+		margin-left: 0.8%;
+	}
+	.teams .body .button{
+    	margin-top: 74.5%;
+    }
+
+}
+@media all and (max-width:915px){
+	.services .title p{
+		margin-top: 11.1%;
+		margin-left: -35.8%;
+	}
+	.skills .title p{
+		margin-top: 12.35%;
+		margin-left: -36.3%;
+	}
+	.contact .title p{
+		margin-top: 6.7%;
+		margin-left: -12.35%;
+	}
+	.contact .main .row .column .col .p1{
+  	  margin-left: -8.26%;
+	}
+	.contact .main .row .column .col .p2{
+    margin-left: -11.05%;
+	}
+	.contact .main .row .column .col .p3{
+  	margin-left: -7.45%;
+  }
+}
+@media all and (max-width:900px){
+	.teams .body .button{
+    	margin-top: 77.5%;
+    }
+}
+@media all and (max-width:892px){
+	 .contact .title p{
+		margin-top: 6.7%;
+		margin-left: -12.75%;
+	}
+}
+@media all and (max-width:880px){
+	.home{
+		margin-left: -1.5%;
+	}
+	.menu-btn i{
+		margin-left: 63%;
+	}
+	.navbar .logo a{
+		margin-left: 28%;
+	}
+	.desc .details h1{
+		margin-top: 1.8%;
+	}
+	.about .about-btn #btn{
+		font-size: 16px;
+		 margin-top: -16%;
+	}
+	.desc .details{
+		width: 91%;
+	}
+	.desc .details p{
+		width: 100%;
+		overflow: hidden;
+	}
+	.desc .details h1{
+		font-size: 22px;
+	}
+	.desc .details{
+		overflow: hidden;
+	}
+	.services .title p{
+		margin-top: 11.4%;
+		margin-left: -36.5%;
+	}
+}
+@media all and (max-width:870px){
+	.contact .main .row .column .col .p1{
+  	  margin-left: -8.76%;
+	}
+	.contact .main .row .column .col .p2{
+    margin-left: -11.48%;
+	}
+	.contact .main .row .column .col .p3{
+  	margin-left: -7.75%;
+  }
+}
+@media all and (max-width:865px){
+  .skills .title p{
+		margin-top: 12.25%;
+		margin-left: -37.3%;
+	}
+	.contact .title p{
+		margin-left: -13.29%;
+		margin-top: 7.5%;
+	}
+}
+@media all and (max-width:855px){
+	.about .about-btn #btn{
+		width: 34%;
+		padding: 14px 86px;
+		margin-top: -16%;
+	}	
+	.desc .details{
+		overflow: hidden;
+	}
+ .services .title{
+    margin-left: 42.5%;
+	}
+	.services .title p{
+		margin-top: 10.8%;
+		margin-left: -37.35%;
+	}
+	.teams .body .button{
+    	margin-top: 80.7%;
+    }
+
+}
+@media all and (max-width:852px){
+   .contact .main .row .column form input{
+   	 width: 98.8%;
+}
+.contact .main .row .column form #input{
+	 margin-top: 1%;
+}
+@media all and (max-width:850px){
+  .skills .title p{
+		margin-top: 12.75%;
+		margin-left: -38.3%;
+	}
+		.services .title p{
+		margin-top: 10.8%;
+		margin-left: -37.35%;
+	}
+}
+@media all and (max-width:849px){
+	.services .title p{
+		margin-left: -3.5%;
+	}
+}
+
+@media all and (max-width:840px){
+ .about .about-btn #btn{
+		width: 36%;
+		padding: 14px 84px;
+		margin-top: -18.5%;
+	}	
+	.desc .details{
+		overflow: hidden;
+	}
+}
+@media all and (max-width:825px){
+  .skills .title p{
+		margin-top: 12.75%;
+		margin-left: -39.95%;
+	}
+	.contact .title p{
+		margin-left: -14%;
+	}
+	.contact .main .row .column .col .p1{
+  	  margin-left: -9.26%;
+	}
+	.contact .main .row .column .col .p2{
+    margin-left: -12.30%;
+	}
+	.contact .main .row .column .col .p3{
+  	margin-left: -8.25%;
+  }
+}
+@media all and (max-width:820px){
+.footer .description{
+    	font-size: 15px;
+	   margin-left: 22.05%;
+}
+}
+@media all and (max-width:812px){
+	.services .title{
+    margin-left: 42.3%;
+	}
+	.services .title p{
+		margin-top: 11.2%;
+		margin-left: -38.05%;
+	}
+	.teams .body .button{
+    	margin-top: 83.9%;
+    }
+}
+@media all and (max-width:800px)
+{
+	.contact .title p{
+		margin-left: -14.6%;
+	}
+	.contact .main .row .column .col .p1{
+  	  margin-left: -9.46%;
+	}
+	.contact .main .row .column .col .p2{
+    margin-left: -12.70%;
+	}
+	.contact .main .row .column .col .p3{
+  	margin-left: -8.55%;
+  }
+}
+@media all and (max-width:790px){
+	.about .about-btn #btn{
+		width: 36%;
+		margin-top: -18.5%;
+		padding: 15px 72px;
+	}
+	.desc .details{
+		overflow: hidden;
+	}
+	.skills .title p{
+		margin-top: 13.35%;
+		margin-left: -41.9%;
+	}
+	.teams .body .button{
+    	margin-top: 85.9%;
+    }
+}
+@media all and (max-width:782px){
+  .line .column1 .design .head #span{
+   	 margin-left: -59.2%;
+   }
+}
+@media all and (max-width:780px){
+	.about .about-btn #btn{
+		margin-top: -18.5%;
+		width: 32%;
+		font-size: 15px;
+		padding: 17px 65px;
+
+	}
+	.desc img{
+     margin-left: 0.5%;
+	}
+	.menu.active{
+     margin-left: 76%;
+	}
+	.home{
+		width: 70%;
+		margin-left: -2.5%;
+	}
+	.menu-btn i{
+		margin-left: 61%;
+	}
+	.navbar .logo a{
+		margin-left: 20%;
+	}	
+.home .home-content .text-2{
+	margin-top: 1%;
+	font-size: 45px;
+}
+.home .home-content .text-3{
+	margin-top: 1.5%;
+	font-size: 25px;
+}
+.home .home-content .text-4{
+margin-top: 1%;	
+	font-size: 25px;
+}
+.home .home-content{
+	margin-top: 0%;
+}
+.home .btn button{
+	width: 28%;
+	font-size: 18px;
+	margin-top: 4.5%;
+}
+.services .title{
+    margin-left: 42.1%;
+	}
+	.services .title p{
+		margin-top: 11.3%;
+		margin-left: -39.55%;
+	}
+	.div .div-class i{
+ 	margin-left: 44.5%;
+ }
+ .head{
+    margin-left: 37.6%;
+    margin-top: 0.76%;
+ }
+ .para{
+ 	  margin-left: 6.7%;
+ 	  margin-top: 1.5%;
+ }
+}
+@media all and (max-width:775px){
+  .contact .title p{
+  	margin-top: 7.5%;
+  	margin-left: -15%;
+  }
+  .contact .main .row .column{
+		margin-top: 5.05%;
+	}
+  .contact .main .row .column p{
+  	margin-top: 5.2%;
+  }
+  	.contact .main .row .column i{
+     margin-top: 13.2%;
+  	}
+  	.contact .main .row .column .col p{
+  		margin-top: 1.2%;
+  	}
+  	.contact .main .row .column .col .p1{
+  		margin-top: 6.3%;
+  	  margin-left: -9.8%;
+	}
+	.contact .main .row .column .col .p2{
+		margin-top: 6.8%;
+    margin-left: -13.40%;
+	}
+	.contact .main .row .column .col .p3{
+		margin-top: 6.25%;
+  	margin-left: -8.85%;
+  }
+  .contact .main .row .column .col{
+  	margin-top: 5.25%;
+  }
+
+@media all and (max-width:760px){
+	.menu-btn i{
+		margin-left: 59%;
+	}
+	.home{
+		margin-left: -4.5%;
+	}
+	.services .title p{
+		margin-top: 11.55%;
+		margin-left: -40.25%;
+	}
+	.skills .title p{
+		margin-top: 13.85%;
+		margin-left: -44%;
+	}
+	.line .text{
+    margin-top: 6.7%;
+	}
+	.teams .title{
+		margin-left: 37.5%;
+	}
+ .teams .title h1{
+ 	 padding: 15px 15px;
+ }
+ .teams .title p{
+ 	  margin-left: -28.75%;
+ }
+ .teams .body .member{
+ 	margin-top: 10.9%;
+ }
+ .teams .body .member .members{
+   	 width: 95%;
+     height: 44.5vh;
+     margin-top: 6.2%;
+   }
+   .teams .body .member .members img{
+   	margin-top: 1.4%;
+   	 margin-left: 38.3%;
+   }
+   .teams .body .member .members h3{
+   	font-size: 26px;
+   	margin-top: 0.7%;
+    margin-left: 35.85%;
+   }
+   .teams .body .member .members h3.third{
+   margin-left: 33.95%;
+   }
+   .teams .body .member .members p{
+   	margin-top: 4.2%;
+   }
+   .teams .body .member .members-one{
+   	 width: 95%;
+     height: 44.5vh;
+     margin-top: 6.2%;
+   }
+   .teams .body .member .members-one img{
+   	margin-top: 1.4%;
+   	 margin-left: 38.3%;
+   }
+   .teams .body .member .members-one h3{
+   	font-size: 26px;
+   	margin-top: 0.7%;
+    margin-left: 35.85%;
+   }
+   .teams .body .member .members-one h3.third{
+   margin-left: 33.95%;
+   }
+   .teams .body .member .members-one p{
+   	margin-top: 4.2%;
+   }
+   .teams .body .button{
+    	margin-top: 95.5%;
+    }
+}
+@media all and (max-width:743px){
+  .line .column1{
+  	margin-top: 20%;
+  }
+}
+@media all and (max-width:740px){
+	.menu-btn i{
+		margin-left: 58%;
+	}
+	.about .about-btn #btn{
+		margin-top: -20.5%;
+		margin-left: 43%;
+		padding: 14px 58px;
+	}
+	.desc{
+		margin-top: 3%;
+	}
+	.desc img{
+		width: 38%;
+		margin-left: -2%;
+	}
+	.desc .details{
+		width: 95%;
+		margin-left: 2%;
+	}
+	.services .title p{
+		margin-top: 11.65%;
+		margin-left: -41.35%;
+	}
+	.contact .title p{
+  	margin-top: 8%;
+  	margin-left: -15.7%;
+  }
+
+}
+@media all and (max-width:735px){
+	.contact .title p{
+		margin-left: -16%;
+	}
+	.contact .main .row .column .col .p1{
+  	  margin-left: -10.22%;
+	}
+	.contact .main .row .column .col .p2{
+    margin-left: -13.90%;
+	}
+	.contact .main .row .column .col .p3{
+  	margin-left: -9.35%;
+  }
+}
+
+@media all and (max-width:730px){
+   .teams .body .button{
+    	margin-top: 93.8%;
+    	margin-left: -3.2%;
+    }
+}
+@media all and (max-width:720px){
+.skills .title p{
+		margin-top: 14.55%;
+		margin-left: -46.4%;
+	}
+	.line .text{
+    margin-top: 8.7%;
+	}
+}
+@media all and (max-width:720px){
+	.menu-btn i{
+		margin-left: 56%;
+	}
+	.services .title{
+		margin-left: 41.6%;
+	}
+	.services .title p{
+		margin-top: 11.75%;
+		margin-left: -42.15%;
+	}
+}
+
+@media all and (max-width:705px){
+  .teams .body .button{
+    	margin-top: 102.4%;
+    }
+    .contact .title p{
+	 margin-top: 9.5%;
+		margin-left: -17%;
+	}
+		
+	.contact .main .row .column .col{
+		margin-top: 6.7%;
+	}
+	.contact .main .row .column .col .p1{
+    margin-left: -10.84%;
+	}
+	.contact .main .row .column .col .p2{
+    margin-left: -14.60%;
+	}
+	.contact .main .row .column .col .p3{
+    margin-left: -9.95%;
+	}
+	.contact .main .row .column{
+		margin-top: 8.4%;
+	}
+
+.contact .main{
+	height: 140vh;
+}
+.contact .main .row{
+	height: 135vh;
+}
+.footer{
+    margin-top: 3.5%;
+	}
+ .footer .description{
+    	font-size: 15px;
+	   margin-left: 18.75%;
+}
+}
+}
+@media all and (max-width:700px){
+	.menu-btn i{
+		margin-left: 54%;
+	}
+	.services .title{
+		margin-left: 41%;
+	}
+	.services .title p{
+		margin-top: 11.85%;
+		margin-left: -43%;
+	}
+}
+@media all and (max-width:690px){
+.skills .title p{
+		margin-top: 15.25%;
+		margin-left: -48.5%;
+	}
+	.line .text{
+    margin-top: 11.7%;
+	}
+	.skills .title h1{
+	font-size: 30px;
+	margin-top: 4%;
+	margin-left: -6.5%;
+	font-weight: bold;
+}
+
+}
+@media all and (max-width:680px){
+	.menu-btn i{
+		margin-left: 52%;
+	}
+	.home .home-content .text-4{
+		font-size: 17px;
+	}
+	.about .about-btn #btn{
+		width: 38%;
+		margin-top: -23%;
+		margin-left: 43%;
+		padding: 16px 60x;
+	}
+	.desc img{
+		width: 40%;
+		margin-left: -3%;
+		height: 55vh;
+  }
+  .desc .details h1{
+	font-size: 20px;
+  }
+  .services .title{
+		margin-left: 40.3%;
+	}
+	.services .title p{
+		margin-top: 11.95%;
+		margin-left: -44.25%;
+	}
+	.teams .body .button{
+    	margin-top: 105.9%;
+    }
+}
+@media all and (max-width:670px){
+  .line .column1{
+  	margin-top: 16%;
+  }
+    .contact .title p{
+	  margin-top: 10.8%;
+		margin-left: -17.6%;
+	}
+	.contact .main .row .column .col{
+		margin-top: 6.7%;
+	}
+	.contact .main .row .column .col .p1{
+    margin-left: -11.14%;
+	}
+	.contact .main .row .column .col .p2{
+    margin-left: -15.10%;
+	}
+	.contact .main .row .column .col .p3{
+    margin-left: -10.25%;
+	}
+}
+@media all and (max-width:660px){
+	.menu-btn i{
+		margin-left: 50%;
+	}
+	.services .title{
+		margin-left: 40.3%;
+	}
+	.services .title p{
+		margin-top: 12.05%;
+		margin-left: -45.35%;
+	} 
+	.skills .title p{
+		margin-top: 15.95%;
+		margin-left: -51.6%;
+	}
+	.skills .title h1{
+		margin-left: -6%;
+	}
+	.line .text{
+    margin-top: 13.9%;
+	}
+	.line .text p{
+	margin-top: 5%;
+  font-size: 15.6px;
+}
+.line .text button{
+	width: 25%;
+	margin-top: 5%;
+	font-size: 14.3px;
+}.teams .title{
+	margin-left: 36%;
+}
+.teams .title h1{
+ 	 padding: 15px 2px;
+ }
+ .teams{
+ 	height: 210vh;
+ }
+ .teams .title p{
+ 	  margin-left: -26.25%;
+ }
+ .teams .body .member{
+ 	margin-top: 13.5%;
+ }
+ .teams .body .member .members{
+   	 width: 95%;
+     height: 52.3vh;
+     margin-top: 6.2%;
+   }
+   .teams .body .member .members img{
+   	margin-top: 1.4%;
+   	 margin-left: 34.7%;
+   }
+   .teams .body .member .members h3{
+   	font-size: 26px;
+   	margin-top: 1.5%;
+    margin-left: 33.35%;
+   }
+   .teams .body .member .members h3.third{
+   margin-left: 31.95%;
+   }
+   .teams .body .member .members p{
+   	margin-top: 5.34%;
+   }
+   .teams .body .member .members-one{
+   	 width: 95%;
+     height: 52.3vh;
+     margin-top: 6.2%;
+   }
+   .teams .body .member .members-one img{
+   	margin-top: 1.4%;
+   	 margin-left: 34.7%;
+   }
+   .teams .body .member .members-one h3{
+   	font-size: 26px;
+   	margin-top: 1.5%;
+    margin-left: 33.35%;
+   }
+   .teams .body .member .members-one h3.third{
+   margin-left: 31.95%;
+   }
+   .teams .body .member .members-one p{
+   	margin-top: 5.34%;
+   }
+   .teams .body .button{
+   	margin-left: -3.2%;
+    	margin-top: 130.9%;
+    }
+}
+@media all and (max-width:650px){
+	.menu-btn i{
+		margin-left: 48%;
+	}
+	.menu{
+		margin-left: -8%;
+	}
+	.navbar .logo a{
+		margin-left: 14%;
+	}
+.home .home-content .text-2{
+	margin-top: 2.5%;
+	font-size: 35px;
+}
+.home .home-content .text-3{
+	font-size: 18px;
+}
+.home .home-content .text-4{
+	margin-top: 2.5%;
+	font-size: 18px;
+}
+.home .home-content{
+	margin-top: 5%;
+}
+.home .btn button{
+	width: 28%;
+	font-size: 18px;
+	margin-top: 4.5%;
+}
+.services .title{
+		margin-left: 40.3%;
+	}
+	.services .title p{
+		margin-top: 12.35%;
+		margin-left: -46.1%;
+	}
+	.contact .title p{
+	  margin-top: 11.2%;
+		margin-left: -18.25%;
+	}
+
+	.contact .main .row .column .col{
+		margin-top: 6.7%;
+	}
+	.contact .main .row .column .col .p1{
+    margin-left: -11.64%;
+	}
+	.contact .main .row .column .col .p2{
+    margin-left: -15.60%;
+	}
+	.contact .main .row .column .col .p3{
+		margin-top: 6.9%;
+    margin-left: -10.55%;
+	} 
+}
+
+
+@media all and (max-width:640px){
+  .menu-btn i{
+		margin-left: 46%;
+	}
+	.about .about-btn #btn{
+		margin-top: -33.5%;
+	}
+	.desc img{
+		width: 42%;
+		height: 50vh;
+		margin-left: -4%;
+	}
+	.desc .details{
+		height: 38vh;
+	}
+	.desc .details h1{
+		font-size: 18px;
+	}
+}
+@media all and (max-width:630px){
+  .menu-btn i{
+		margin-left: 44%;
+	}
+	.services .title{
+		margin-left: 40%;
+	}
+	.services .title p{
+		margin-top: 12.65%;
+		margin-left: -46.8%;
+	} 
+	  .teams .body .button{
+	  	margin-left: -3.2%;
+    	margin-top: 138.9%;
+    }
+}
+@media all and (max-width:622px){
+.contact .title p{
+	  margin-top: 11.8%;
+		margin-left: -18.75%;
+	}
+
+	.contact .main .row .column .col{
+		margin-top: 7.9%;
+	}
+	.contact .main .row .column .col .p1{
+		margin-top: 7.5%;
+    margin-left: -12.37%;
+	}
+	.contact .main .row .column .col .p2{
+		margin-top: 7.5%;
+    margin-left: -16.30%;
+	}
+	.contact .main .row .column .col .p3{
+		margin-top: 7.5%;
+    margin-left: -10.95%;
+	} 
+}
+@media all and (max-width:620px){
+  .menu-btn i{
+		margin-left: 43.4%;
+	}
+	.services .title{
+		margin-left: 39.7%;
+	}
+	.services .title p{
+		margin-top: 12.85%;
+		margin-left: -47.6%;
+	} 
+	.skills .title h1{
+		margin-left: -9.3%;
+	}
+	.skills .title p{
+		margin-left: -53.6%;
+	}
+}
+@media all and (max-width:606px){
+  .menu-btn i{
+		margin-left: 42.5%;
+	}
+		.services .title{
+		margin-left: 39.5%;
+	}
+	.services .title p{
+		margin-top: 13%;
+		margin-left: -48.4%;
+}
+    .teams .body button{
+    	width: 10%;
+    } 
+}
+@media all and (max-width:600px){
+  
+.contact .title p{
+	  margin-top: 11.8%;
+		margin-left: -19.25%;
+	}
+	.contact .main .row .column{
+		margin-top: 10.2%;
+	}
+	.contact .main .row .column .col .p1{
+		margin-top: 7.5%;
+    margin-left: -12.97%;
+	}
+	.contact .main .row .column .col .p2{
+		margin-top: 7.5%;
+    margin-left: -17.10%;
+	}
+	.contact .main .row .column .col .p3{
+		margin-top: 7.5%;
+    margin-left: -11.65%;
+	} 
+	.contact .main .row .column form button{
+		width: 34%;
+		font-size: 17px;
+	}
+}
+@media all and (max-width:596px){
+  .menu-btn i{
+		margin-left: 41%;
+	}
+		.services .title{
+		margin-left: 39.5%;
+	}
+	.services .title p{
+		margin-top: 13.28%;
+		margin-left: -49.58%;
+	} 
+}
+@media all and (max-width:593px){
+	.line .column1{
+		margin-top: 21.6%;
+	}
+}
+@media all and (max-width:585px){
+  .menu-btn i{
+		margin-left: 39%;
+	}
+	.about .about-btn #btn{
+		margin-top: -39%;
+		margin-left: 45%;
+		width: 38%;
+		padding: 15px 50px;
+	}
+	.desc img{
+		width: 44%;
+		margin-left: -5%;
+		height: 47vh;
+	}
+	.desc .details h1{
+		margin-left: 15%;
+		font-size: 22px;
+	}
+	.desc .details{
+		height: 36vh;
+	}
+	.desc .details h1 span{
+      display: grid;
+    	font-size: 22px;
+    	margin-top: 11.4%;
+    	margin-left: -68.5%;
+	}
+		.services .title{
+			display: flex;
+			margin-top: -25%;
+		margin-left: 39.25%;
+	}
+	.services .title p{
+		margin-left: -50.78%;
+	} 
+	.skills .title h1{
+		margin-top: 12%;
+    margin-left: -10.3%;
+	}
+	.skills .title p{
+		margin-top: 26%;
+		margin-left: -56%;
+	}
+		.teams .body .member{
+			margin-top: 15%;
+		}
+	.teams .body .member .members img{
+		margin-top: 2.9%;
+	}
+	.teams .body .member .members{
+     height: 52.9vh;
+	}
+	.teams .body .member .members p{
+   	margin-top: 6.8%;
+   }
+   .teams .body .member .members-one img{
+		margin-top: 2.9%;
+	}
+	.teams .body .member .members-one{
+     height: 52.9vh;
+	}
+	.teams .body .member .members-one p{
+   	margin-top: 6.8%;
+   }
+   .teams .body .button{
+   	 margin-left: -3%
+    	margin-top: 150.25%;
+    }
+}
+@media all and (max-width:580px){
+.contact .title p{
+	  margin-top: 11.8%;
+		margin-left: -19.85%;
+	}
+	.contact .main .row .column{
+		margin-top: 12.2%;
+	}
+	.contact .main .row .column .col .p1{
+		margin-top: 7.5%;
+    margin-left: -13.27%;
+	}
+	.contact .main .row .column .col .p2{
+		margin-top: 7.5%;
+    margin-left: -17.60%;
+	}
+	.contact .main .row .column .col .p3{
+		margin-top: 7.5%;
+    margin-left: -12.05%;
+	} 
+}
+@media all and (max-width:570px){
+  .menu-btn i{
+		margin-left: 38.2%;
+	}
+	.desc .details h1 span{
+      display: grid;
+    	font-size: 22px;
+    	margin-top: 11.4%;
+    	margin-left: -73.5%;
+	}
+	.services{
+		height: 126vh;
+	}
+	.services .div .div-class{
+		height: 31.5vh;
+	}
+	.services .div #div-2{
+    margin-top: 4%;
+	}
+	.services .div #div-3{
+    margin-top: 4%;
+	}
+	.services .title{
+		margin-top: 9.8%;
+		margin-left: 39.02%;
+	}
+	.services .title p{
+		margin-top: 13.62%;
+		margin-left: -52.95%;
+	} 
+	.para{
+		margin-top: 2.95%;
+	}
+	.teams .body .button{
+		margin-left: -3.0%;
+    	margin-top: 155.45%;
+    }
+}
+@media all and (max-width:560px){
+    .skills .title h1{
+		margin-top: 12%;
+    margin-left: -11.3%;
+	}
+	.skills .title p{
+		margin-top: 26%;
+		margin-left: -58%;
+	}
+	.contact .title p{
+	  margin-top: 11.8%;
+		margin-left: -20.45%;
+	}
+	.contact .main .row .column{
+		margin-top: 12.2%;
+	}
+	.contact .main .row .column .col .p1{
+		margin-top: 7.5%;
+    margin-left: -13.57%;
+	}
+	.contact .main .row .column .col .p2{
+		margin-top: 7.5%;
+    margin-left: -18.10%;
+	}
+	.contact .main .row .column .col .p3{
+		margin-top: 7.5%;
+    margin-left: -12.25%;
+	} 
+}
+@media all and (max-width:550px){
+  .menu-btn i{
+		margin-left: 37.5%;
+	}
+	.about .about-btn #btn{
+		width: 45%;
+	  padding: 15px 60px;
+	  margin-top: -42%;
+		margin-left: 44.5%;
+		height:6.5vh;
+	}
+	.services .title p{
+		margin-top: 13.82%;
+		margin-left: -54.05%;
+	}
+	.teams .body .button{
+		display: flex;
+     	margin-left: -20.5%
+    	margin-top: 160.45%;
+    }
+}
+@media all and (max-width:545px){
+.contact .title p{
+	  margin-top: 11.8%;
+		margin-left: -21.05%;
+	}
+	.contact .main .row .column{
+		margin-top: 11.35%;
+	}
+	.contact .main .row .column .col .p1{
+		margin-top: 7.5%;
+    margin-left: -13.97%;
+	}
+	.contact .main .row .column .col .p2{
+		margin-top: 7.5%;
+    margin-left: -18.60%;
+	}
+	.contact .main .row .column .col .p3{
+		margin-top: 7.5%;
+    margin-left: -12.55%;
+	} 
+}
+@media all and (max-width:540px){
+   .line .column1{
+		margin-top: 27.4%;
+	} 
+	 .skills .title h1{
+		margin-top: 12%;
+    margin-left: -11.8%;
+	}
+	.skills .title p{
+		margin-top: 27.5%;
+		margin-left: -61%;
+	}
+	.teams{
+		height: 210vh;
+	}
+	.teams .title{
+  margin-left: 34.5%;
+	}
+		.teams .body .member{
+			margin-top: 15%;
+		}
+	.teams .body .member .members img{
+		margin-top: 2.9%;
+		margin-left: 33%;
+	}
+	.teams .body .member .members h3{
+		margin-left: 32.1%;
+		font-size: 24px;
+	}
+	.teams .body .member .members h3.third{
+		margin-left: 30.1%;
+	}
+	.teams .body .member .members p{
+		font-size: 19px;
+	}
+		.teams .body .member .members-one img{
+		margin-top: 2.9%;
+		margin-left: 33%;
+	}
+	.teams .body .member .members-one h3{
+		margin-left: 32.1%;
+		font-size: 24px;
+	}
+	.teams .body .member .members-one p{
+		font-size: 19px;
+	}
+}
+
+@media all and (max-width:530px){
+  
+	.contact .main .row .column .col .p1{
+		margin-top: 7.5%;
+    margin-left: -14.70%;
+	}
+	.contact .main .row .column .col .p2{
+		margin-top: 7.5%;
+    margin-left: -18.90%;
+	}
+	.contact .main .row .column .col .p3{
+		margin-top: 7.5%;
+    margin-left: -12.75%;
+	}
+}
+@media all and (max-width:522px){
+	 .line .column1 .design .head #span{
+   	 margin-left: -50.7%;
+   }
+   .teams .body .button{
+     	margin-left: -2.5%;
+    	margin-top: 165.5%;
+    }
+}
+@media all and (max-width:520px){
+  .about .about-btn #btn{
+	  margin-top: -45%;
+  }
+  .desc img{
+  	width: 45%;
+  }
+  .services .title h1{
+  	margin-left: -9.2%;
+  }
+  .services .title p{
+		margin-top: 14.22%;
+		margin-left: -55.25%;
+	} 
+	.div .div-class i{
+		margin-top: 2%;
+		font-size: 30px;
+	}
+	.contact .main .row .column{
+		margin-top: 13.5%;
+	}
+	.head{
+		margin-top: 1.4%;
+		margin-left: 34%;
+		font-size: 22px;
+	}
+	.contact .title p{
+		margin-left: -22%;
+	}
+
+	.contact .main .row .column .col .p1{
+		margin-top: 7.5%;
+    margin-left: -15.10%;
+	}
+	.contact .main .row .column .col .p2{
+		margin-top: 7.5%;
+    margin-left: -19.50%;
+	}
+	.contact .main .row .column .col .p3{
+		margin-top: 7.5%;
+    margin-left: -13.25%;
+	}
+ }
+ @media all and (max-width:510px){
+ 	.services .title p{
+		margin-top: 14.72%;
+		margin-left: -58.95%;
+	} 
+	.skills .title h1{
+		margin-top: 14%;
+    margin-left: -13.7%;
+	}
+	.skills .title p{
+		margin-top: 30.3%;
+		margin-left: -66%;
+	}
+	.teams .body .button{
+		margin-left: -2.5%;
+    	margin-top: 170.45%;
+    }
+    .contact{
+    	height: 169vh;
+    	margin-top: 11.2%;
+    }
+        .contact .main .row{
+    	height: 138vh;
+    }
+    .contact .main .row .column{
+    	margin-top: 18.3%;
+    }
+    .contact .title p{
+		margin-left: -23.75%;
+	}
+ }
+
+ @media all and (max-width:500px){
+.about .about-btn #btn{
+   	  width: 44%;
+   	  height: 6vh;
+   	  text-align: center;
+   	  font-size: 15px;
+   	  padding: 12px 45px;
+   	  margin-left: 50%;
+   	  margin-top: -31%;
+   }
+   .desc img{
+   	margin-top: 16%;
+   	width: 64%;
+   	height: 45vh;
+   	margin-left: -5%;
+   }
+   .about .title{
+     position: relative;
+     margin-top: 12%;
+     margin-left: 35%;
+     font-family: 'Ubuntu', sans-serif;
+     font-weight: 500;
+}
+.desc .details{
+	height: 45vh;
+}
+    .desc .details h1{
+    	 display: flex;
+    	 font-size: 20px;
+    	 margin-top: 25%;
+    	 margin-left: 8%;
+    }
+    .desc .details h1 span{
+    	display: grid;
+    	font-size: 18px;
+    	margin-top: 14.4%;
+    	margin-left: -72%;
+    }
+    .desc .details p{
+    	width: 95%;
+    	font-size: 15.8893px;
+    	overflow: hidden;
+    	height: 29.2vh;
+    }
+ }
+@media all and (max-width:491px){
+ .line .column1{
+		margin-top: 22.4%;
+	} 
+}
+@media all and (max-width:491px){
+.services .title p{
+		margin-top: 15.12%;
+		margin-left: -59.95%;
+	} 
+}
+@media all and (max-width:470px){
+  .menu.active{
+     margin-left: 42%;
+	}
+	/*.menu li{
+		margin-left: -30%;
+	}*/
+	.menu li a{
+		font-size: 16.8px;
+		margin-left: 20%;
+	}
+  .menu-btn i{
+  	margin-top: 12%;
+		margin-left: 40.5%;
+	}
+}
+.services .title p{
+		margin-top: 15.52%;
+		margin-left: -61.95%;
+	} 
+}
+@media all and (max-width:450px){
+  .menu-btn i{
+  	display: flex;
+		margin-left: 30%;
+	}
+	.services .title p{
+		margin-top: 15.95%;
+		margin-left: -64.35%;
+	} 
+}
+@media all and (max-width:430px){
+.services .title h1{
+	margin-top: -15%;
+	margin-left: -14%;
+}
+.services .title p{
+		margin-top: 3.52%;
+		margin-left: -64.75%;
+	} 
+}
+@media all and (max-width:415px){
+.services .title h1{
+	margin-top: -20%;
+	margin-left: -15%;
+}
+.services .title p{
+		margin-top: 5.52%;
+		margin-left: -67.05%;
+	} 
+}
+@media all and (max-width:400px){
+  .menu-btn i{
+		margin-left: 32%;
+	}
+	.menu{
+		width: 15%;
+		margin-left: -18%;
+	}
+}
+@media all and (max-width:380px){
+  .menu-btn i{
+		margin-left: 31%;
+	}
+}
+@media all and (max-width:360px){
+  .menu-btn i{
+		margin-left: 30%;
+	}
+}
+@media all and (max-width:340px){
+  .menu-btn i{
+		margin-left: 29%;
+	}
+}
+@media all and (max-width:320px){
+  .menu-btn i{
+		margin-left: 28%;
+	}
+}
+@media all and (max-width:300px){
+  .menu-btn i{
+		margin-left: 27%;
+	}
+}
+@media all and (max-width:280px){
+  .menu-btn i{
+		margin-left: 26%;
+	}
+}
+@media all and (max-width:260px){
+  .menu-btn i{
+		margin-left: 25%;
+	}
+}
+@media all and (max-width:240px){
+  .menu-btn i{
+		margin-left: 24%;
+	}
+}
+@media all and (max-width:220px){
+  .menu-btn i{
+		margin-left: 32%;
+	}
+}
+@media all and (max-width:210px){
+  .menu-btn i{
+		margin-left: 32%;
+	}
+}
